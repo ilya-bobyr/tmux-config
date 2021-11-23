@@ -14,7 +14,7 @@ YAML/JSON with [tmuxp](https://github.com/tony/tmuxp).
 Installation
 ------------
 
-  Download:
+Download:
 
 ```bash
 mkdir -p ~/works  # Or any other directory you like
@@ -22,12 +22,35 @@ cd ~/works
 git clone https://github.com/ilya-bobyr/tmux-config.git
 ```
 
-  Install:
+Install:
 
 ```bash
 cd
 ln -s ~/works/tmux-config/.tmux.conf
 ```
+
+I use [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm), so
+you'll need to install it as well:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Now you can start tmux:
+
+```bash
+tmux
+```
+
+or, if you want to name your session:
+
+```bash
+tmux new-session -s my-main-session
+```
+
+And finally, if this is the first time you are using this config, you need
+to install TPM plugins, by pressing `<Control + a> <Shift + i>` and waiting
+for a second, until you see a "Tmux environment reloaded" message.
 
 Start tmux
 ----------
